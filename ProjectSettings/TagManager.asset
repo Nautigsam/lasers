@@ -43,3 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: floors
+    uniqueID: 2119056721
+    locked: 0
+  - name: New Layer
+    uniqueID: 3426703399
+    locked: 0

@@ -39,7 +39,7 @@ public class EvilNickController : MonoBehaviour {
 
 	void Patrol(){
 
-		//Changes way evilNick is looking every time the function is called
+		//Changes way evilNick is looking every time the function is called	
 		facingLeft = !facingLeft;
 
 		//Flip left and right at random intervals

@@ -85,6 +85,159 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4747063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4747064}
+  m_Layer: 0
+  m_Name: lineEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4747064
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4747063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.214, y: 0.117, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1235731832}
+  m_RootOrder: 1
+--- !u!1 &13599973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 13599978}
+  - 212: {fileID: 13599977}
+  - 50: {fileID: 13599976}
+  - 61: {fileID: 13599975}
+  - 58: {fileID: 13599974}
+  - 114: {fileID: 13599979}
+  m_Layer: 9
+  m_Name: evilNick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!58 &13599974
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.18
+--- !u!61 &13599975
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 0.76}
+--- !u!50 &13599976
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &13599977
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c8f5235be62d6f44b8bbe259a84b0709, type: 3}
+  m_Color: {r: 0.8897059, g: 0.15700692, b: 0.15700692, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+--- !u!4 &13599978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45, y: -3.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1940876860}
+  - {fileID: 715618175}
+  - {fileID: 253832193}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!114 &13599979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13599973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f6fbf1260fc0d4ea335b970439c730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sightStart: {fileID: 715618175}
+  sightEnd: {fileID: 253832193}
+  spotted: 0
+  facingLeft: 1
+  exclamPoint: {fileID: 1940876859}
 --- !u!1 &85284646
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +305,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cb5f51a70b2f4646b7c7a6793851a2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -225,7 +378,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cb5f51a70b2f4646b7c7a6793851a2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +394,7 @@ GameObject:
   - 4: {fileID: 189424562}
   - 212: {fileID: 189424564}
   - 61: {fileID: 189424563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +451,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -314,7 +467,7 @@ GameObject:
   - 4: {fileID: 198510233}
   - 212: {fileID: 198510235}
   - 61: {fileID: 198510234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +524,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -387,7 +540,7 @@ GameObject:
   - 4: {fileID: 199902176}
   - 212: {fileID: 199902178}
   - 61: {fileID: 199902177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +597,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -460,7 +613,7 @@ GameObject:
   - 4: {fileID: 225331646}
   - 212: {fileID: 225331648}
   - 61: {fileID: 225331647}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,12 +670,39 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &253832192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 253832193}
+  m_Layer: 0
+  m_Name: sightEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253832193
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253832192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.84, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 13599978}
+  m_RootOrder: 2
 --- !u!1 &286567825
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +713,7 @@ GameObject:
   - 4: {fileID: 286567826}
   - 212: {fileID: 286567828}
   - 61: {fileID: 286567827}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +770,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -606,7 +786,7 @@ GameObject:
   - 4: {fileID: 298265892}
   - 212: {fileID: 298265894}
   - 61: {fileID: 298265893}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +843,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -679,7 +859,7 @@ GameObject:
   - 4: {fileID: 346300791}
   - 212: {fileID: 346300793}
   - 61: {fileID: 346300792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +916,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -752,7 +932,7 @@ GameObject:
   - 4: {fileID: 376712379}
   - 212: {fileID: 376712381}
   - 61: {fileID: 376712380}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +989,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -825,7 +1005,7 @@ GameObject:
   - 4: {fileID: 442958492}
   - 212: {fileID: 442958494}
   - 61: {fileID: 442958493}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +1062,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -898,7 +1078,7 @@ GameObject:
   - 4: {fileID: 472123505}
   - 212: {fileID: 472123507}
   - 61: {fileID: 472123506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +1135,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -971,7 +1151,7 @@ GameObject:
   - 4: {fileID: 506589802}
   - 212: {fileID: 506589804}
   - 61: {fileID: 506589803}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1208,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1044,7 +1224,7 @@ GameObject:
   - 4: {fileID: 542690824}
   - 212: {fileID: 542690826}
   - 61: {fileID: 542690825}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,7 +1281,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1203,7 +1383,7 @@ GameObject:
   - 4: {fileID: 573522575}
   - 212: {fileID: 573522577}
   - 61: {fileID: 573522576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1440,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1274,7 +1454,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 595967320}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1309,7 +1489,7 @@ GameObject:
   - 4: {fileID: 632126030}
   - 212: {fileID: 632126032}
   - 61: {fileID: 632126031}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1366,7 +1546,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1439,7 +1619,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cb5f51a70b2f4646b7c7a6793851a2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1455,7 +1635,7 @@ GameObject:
   - 4: {fileID: 657473497}
   - 212: {fileID: 657473499}
   - 61: {fileID: 657473498}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,12 +1692,39 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &715618174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 173812, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+  m_PrefabInternal: {fileID: 2063125249}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 715618175}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &715618175
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+  m_PrefabInternal: {fileID: 2063125249}
+  m_GameObject: {fileID: 715618174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.049, y: 0.275, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 13599978}
+  m_RootOrder: 1
 --- !u!1 &725156412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1735,7 @@ GameObject:
   - 4: {fileID: 725156413}
   - 212: {fileID: 725156415}
   - 61: {fileID: 725156414}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1585,7 +1792,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1601,7 +1808,7 @@ GameObject:
   - 4: {fileID: 726929380}
   - 212: {fileID: 726929382}
   - 61: {fileID: 726929381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1658,7 +1865,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1672,7 +1879,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 738375247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1963,7 @@ GameObject:
   - 4: {fileID: 754307380}
   - 212: {fileID: 754307382}
   - 61: {fileID: 754307381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +2020,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1829,7 +2036,7 @@ GameObject:
   - 4: {fileID: 772474602}
   - 212: {fileID: 772474604}
   - 61: {fileID: 772474603}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1886,7 +2093,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1902,7 +2109,7 @@ GameObject:
   - 4: {fileID: 844532870}
   - 212: {fileID: 844532872}
   - 61: {fileID: 844532871}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1959,7 +2166,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1975,7 +2182,7 @@ GameObject:
   - 4: {fileID: 877520328}
   - 212: {fileID: 877520330}
   - 61: {fileID: 877520329}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (43)
   m_TagString: groundDirt
   m_Icon: {fileID: 0}
@@ -2032,7 +2239,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2048,7 +2255,7 @@ GameObject:
   - 4: {fileID: 895230443}
   - 212: {fileID: 895230445}
   - 61: {fileID: 895230444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2105,7 +2312,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2120,7 +2327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 905093429}
   - 212: {fileID: 905093430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2179,7 +2386,7 @@ GameObject:
   - 4: {fileID: 970448129}
   - 212: {fileID: 970448131}
   - 61: {fileID: 970448130}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2443,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2252,7 +2459,7 @@ GameObject:
   - 4: {fileID: 979576393}
   - 212: {fileID: 979576395}
   - 61: {fileID: 979576394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2309,7 +2516,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2325,7 +2532,7 @@ GameObject:
   - 4: {fileID: 1022286058}
   - 212: {fileID: 1022286060}
   - 61: {fileID: 1022286059}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2382,7 +2589,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2398,7 +2605,7 @@ GameObject:
   - 4: {fileID: 1066380788}
   - 212: {fileID: 1066380790}
   - 61: {fileID: 1066380789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2455,7 +2662,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2471,7 +2678,7 @@ GameObject:
   - 4: {fileID: 1078606817}
   - 212: {fileID: 1078606819}
   - 61: {fileID: 1078606818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2528,7 +2735,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2601,7 +2808,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cb5f51a70b2f4646b7c7a6793851a2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2616,7 +2823,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1136560831}
   - 212: {fileID: 1136560832}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2675,7 +2882,7 @@ GameObject:
   - 4: {fileID: 1189716858}
   - 212: {fileID: 1189716860}
   - 61: {fileID: 1189716859}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2732,7 +2939,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2748,7 +2955,7 @@ GameObject:
   - 4: {fileID: 1193063919}
   - 212: {fileID: 1193063921}
   - 61: {fileID: 1193063920}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2805,7 +3012,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2821,7 +3028,7 @@ GameObject:
   - 4: {fileID: 1221784243}
   - 212: {fileID: 1221784245}
   - 61: {fileID: 1221784244}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +3085,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2894,7 +3101,7 @@ GameObject:
   - 4: {fileID: 1233818038}
   - 212: {fileID: 1233818040}
   - 61: {fileID: 1233818039}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2951,12 +3158,157 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1235731826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1235731832}
+  - 212: {fileID: 1235731831}
+  - 61: {fileID: 1235731830}
+  - 58: {fileID: 1235731829}
+  - 50: {fileID: 1235731828}
+  - 114: {fileID: 1235731827}
+  - 95: {fileID: 1235731833}
+  m_Layer: 8
+  m_Name: nick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1235731827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fa8a6df214cf448ae7c3131edf5b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteracting: 0
+  isGrounded: 0
+  lineStart: {fileID: 1542150619}
+  lineEnd: {fileID: 4747064}
+  jumpCheck: {fileID: 1598701608}
+  jumpForce: 100
+--- !u!50 &1235731828
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &1235731829
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.03, y: -0.3}
+  serializedVersion: 2
+  m_Radius: 0.09
+--- !u!61 &1235731830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.54}
+--- !u!212 &1235731831
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c8f5235be62d6f44b8bbe259a84b0709, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!4 &1235731832
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.284, y: -3.335, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1542150619}
+  - {fileID: 4747064}
+  - {fileID: 1598701608}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!95 &1235731833
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235731826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0907cdf498a28648aaaa53bf30a9551, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1254592419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,7 +3318,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1254592420}
   - 212: {fileID: 1254592421}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,7 +3377,7 @@ GameObject:
   - 4: {fileID: 1276751784}
   - 212: {fileID: 1276751786}
   - 61: {fileID: 1276751785}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3082,7 +3434,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3098,7 +3450,7 @@ GameObject:
   - 4: {fileID: 1313477289}
   - 212: {fileID: 1313477291}
   - 61: {fileID: 1313477290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3507,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3171,7 +3523,7 @@ GameObject:
   - 4: {fileID: 1329466996}
   - 212: {fileID: 1329466998}
   - 61: {fileID: 1329466997}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3228,7 +3580,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3244,7 +3596,7 @@ GameObject:
   - 4: {fileID: 1342213361}
   - 212: {fileID: 1342213363}
   - 61: {fileID: 1342213362}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3301,7 +3653,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3317,7 +3669,7 @@ GameObject:
   - 4: {fileID: 1343212759}
   - 212: {fileID: 1343212761}
   - 61: {fileID: 1343212760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3374,7 +3726,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3390,7 +3742,7 @@ GameObject:
   - 4: {fileID: 1366219908}
   - 212: {fileID: 1366219910}
   - 61: {fileID: 1366219909}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3447,7 +3799,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3463,7 +3815,7 @@ GameObject:
   - 4: {fileID: 1410474958}
   - 212: {fileID: 1410474960}
   - 61: {fileID: 1410474959}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3520,7 +3872,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3536,7 +3888,7 @@ GameObject:
   - 4: {fileID: 1412840955}
   - 212: {fileID: 1412840957}
   - 61: {fileID: 1412840956}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3593,7 +3945,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3609,7 +3961,7 @@ GameObject:
   - 4: {fileID: 1414139644}
   - 212: {fileID: 1414139646}
   - 61: {fileID: 1414139645}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3666,7 +4018,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3682,7 +4034,7 @@ GameObject:
   - 4: {fileID: 1422729779}
   - 212: {fileID: 1422729781}
   - 61: {fileID: 1422729780}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3739,7 +4091,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3755,7 +4107,7 @@ GameObject:
   - 4: {fileID: 1439683914}
   - 212: {fileID: 1439683916}
   - 61: {fileID: 1439683915}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3812,7 +4164,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3828,7 +4180,7 @@ GameObject:
   - 4: {fileID: 1512981202}
   - 212: {fileID: 1512981204}
   - 61: {fileID: 1512981203}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3885,12 +4237,39 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1542150618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1542150619}
+  m_Layer: 0
+  m_Name: lineStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542150619
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542150618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.018, y: 0.276, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1235731832}
+  m_RootOrder: 0
 --- !u!1 &1573916005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,7 +4280,7 @@ GameObject:
   - 4: {fileID: 1573916006}
   - 212: {fileID: 1573916008}
   - 61: {fileID: 1573916007}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3958,7 +4337,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3974,7 +4353,7 @@ GameObject:
   - 4: {fileID: 1589308889}
   - 212: {fileID: 1589308891}
   - 61: {fileID: 1589308890}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4031,12 +4410,39 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1598701607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1598701608}
+  m_Layer: 0
+  m_Name: groundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1598701608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598701607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.018000007, y: -0.415, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1235731832}
+  m_RootOrder: 2
 --- !u!1 &1608455443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,7 +4453,7 @@ GameObject:
   - 4: {fileID: 1608455444}
   - 212: {fileID: 1608455446}
   - 61: {fileID: 1608455445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4104,7 +4510,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4120,7 +4526,7 @@ GameObject:
   - 4: {fileID: 1609281827}
   - 212: {fileID: 1609281829}
   - 61: {fileID: 1609281828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4177,7 +4583,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4193,7 +4599,7 @@ GameObject:
   - 4: {fileID: 1610154931}
   - 212: {fileID: 1610154933}
   - 61: {fileID: 1610154932}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4250,7 +4656,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4265,7 +4671,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1628007984}
   - 212: {fileID: 1628007985}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4323,7 +4729,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1629977826}
   - 212: {fileID: 1629977827}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4382,7 +4788,7 @@ GameObject:
   - 4: {fileID: 1651061827}
   - 212: {fileID: 1651061829}
   - 61: {fileID: 1651061828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4439,7 +4845,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4455,7 +4861,7 @@ GameObject:
   - 4: {fileID: 1717560612}
   - 212: {fileID: 1717560614}
   - 61: {fileID: 1717560613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4512,7 +4918,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4528,7 +4934,7 @@ GameObject:
   - 4: {fileID: 1722962322}
   - 212: {fileID: 1722962324}
   - 61: {fileID: 1722962323}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4585,7 +4991,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4639,7 +5045,7 @@ GameObject:
   - 4: {fileID: 1805703401}
   - 212: {fileID: 1805703403}
   - 61: {fileID: 1805703402}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4696,7 +5102,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4712,7 +5118,7 @@ GameObject:
   - 4: {fileID: 1817934089}
   - 212: {fileID: 1817934091}
   - 61: {fileID: 1817934090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4769,7 +5175,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4785,7 +5191,7 @@ GameObject:
   - 4: {fileID: 1842584348}
   - 212: {fileID: 1842584350}
   - 61: {fileID: 1842584349}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +5248,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4858,7 +5264,7 @@ GameObject:
   - 4: {fileID: 1862406455}
   - 212: {fileID: 1862406457}
   - 61: {fileID: 1862406456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4915,7 +5321,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4930,7 +5336,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1877477469}
   - 212: {fileID: 1877477470}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4979,6 +5385,64 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1940876859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1940876860}
+  - 212: {fileID: 1940876861}
+  m_Layer: 0
+  m_Name: exclamP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1940876860
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940876859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.013458073, y: 0.59444284, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 13599978}
+  m_RootOrder: 0
+--- !u!212 &1940876861
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940876859}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2119056721
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6ed424afdb65c12489dcf52f32e9aed5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &1989917033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4989,7 +5453,7 @@ GameObject:
   - 4: {fileID: 1989917034}
   - 212: {fileID: 1989917036}
   - 61: {fileID: 1989917035}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5046,12 +5510,54 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &2063125249
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 13599978}
+    m_Modifications:
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2071228960
 GameObject:
   m_ObjectHideFlags: 0
@@ -5062,7 +5568,7 @@ GameObject:
   - 4: {fileID: 2071228961}
   - 212: {fileID: 2071228963}
   - 61: {fileID: 2071228962}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5119,7 +5625,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5135,7 +5641,7 @@ GameObject:
   - 4: {fileID: 2084993204}
   - 212: {fileID: 2084993206}
   - 61: {fileID: 2084993205}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5192,7 +5698,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5208,7 +5714,7 @@ GameObject:
   - 4: {fileID: 2093784933}
   - 212: {fileID: 2093784935}
   - 61: {fileID: 2093784934}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5265,7 +5771,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5281,7 +5787,7 @@ GameObject:
   - 4: {fileID: 2110182705}
   - 212: {fileID: 2110182707}
   - 61: {fileID: 2110182706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5338,7 +5844,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5354,7 +5860,7 @@ GameObject:
   - 4: {fileID: 2142830579}
   - 212: {fileID: 2142830581}
   - 61: {fileID: 2142830580}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: dirt (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5411,7 +5917,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aec8f81cd59bf2f4fa6d24dd43e210af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5427,7 +5933,7 @@ GameObject:
   - 4: {fileID: 2144547459}
   - 212: {fileID: 2144547461}
   - 61: {fileID: 2144547460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: grass (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5484,7 +5990,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2119056721
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 418dce7995d6f4b4da99e23c0161c589, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

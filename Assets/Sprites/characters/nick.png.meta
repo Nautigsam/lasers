@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: aec8f81cd59bf2f4fa6d24dd43e210af
-timeCreated: 1452879711
+guid: c8f5235be62d6f44b8bbe259a84b0709
+timeCreated: 1452880295
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dirt
-    21300002: sky
-    21300004: dirtBorder
+    21300000: nickStanding
+    21300002: nickWalking1
+    21300004: nickWalking2
+    21300006: nickWalking3
+    21300008: nickWalking4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,10 +31,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -47,57 +49,67 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dirt
+    - name: nickStanding
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 22
+        y: 128
+        width: 10
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: sky
+      outline: []
+    - name: nickWalking1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 81
+        y: 128
+        width: 23
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
-    - name: dirtBorder
+      outline: []
+    - name: nickWalking2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 19
+        y: 64
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: nickWalking3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 64
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: nickWalking4
+      rect:
+        serializedVersion: 2
+        x: 19
         y: 0
-        width: 32
-        height: 32
+        width: 12
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16, y: 16}
-        - {x: -16, y: -16}
-        - {x: 16, y: -16}
-        - {x: 16, y: 16}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

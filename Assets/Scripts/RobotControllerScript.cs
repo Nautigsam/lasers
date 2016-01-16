@@ -12,7 +12,12 @@ public class RobotControllerScript : MonoBehaviour {
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 700;
+
+
+	public float jumpForce = 200;
+	float jumpTime,jumpDelay = .5f;
+	bool jumped;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -21,10 +26,10 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		//anim.SetBool ("Ground",grounded);
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		anim.SetBool ("Ground",grounded);
 
-		//anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D> ().velocity.y);
+		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D> ().velocity.y);
 
 		float move = Input.GetAxis ("Horizontal");
 		anim.SetFloat ("Speed", Mathf.Abs (move)); 
@@ -37,10 +42,18 @@ public class RobotControllerScript : MonoBehaviour {
 	}
 
 	void Update(){
-		if (ground && Input.GetKeyDown(keyCode.Space)){
+		if (grounded && Input.GetKeyDown(KeyCode.Space)){
 			anim.SetBool("Ground", false);
-			GetComponent<RigidBody2D> ().AddForce(new Vector2(0, jumpForce ));
+			GetComponent<Rigidbody2D> ().AddForce(new Vector2(0, jumpForce ));
+			jumpTime = jumpDelay;
+			anim.SetTrigger ("Jump");
 		}
+
+		jumpTime = jumpTime - Time.deltaTime;
+		if (jumpTime <=0 && grounded){
+			anim.SetTrigger("Land");
+		}
+
 	}
 	void Flip(){
 		facingRight = !facingRight;

@@ -248,7 +248,8 @@ GameObject:
   - 4: {fileID: 85284647}
   - 212: {fileID: 85284649}
   - 61: {fileID: 85284648}
-  m_Layer: 0
+  - 114: {fileID: 85284650}
+  m_Layer: 9
   m_Name: flame (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,11 +263,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85284646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.27, y: 1.03, z: 0}
+  m_LocalPosition: {x: -13.27, y: 1.0300001, z: 0}
   m_LocalScale: {x: 2.1598673, y: 2.1598673, z: 2.1598673}
   m_Children: []
   m_Father: {fileID: 1777138929}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!61 &85284648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -311,6 +312,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &85284650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85284646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &125142091
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +333,8 @@ GameObject:
   - 4: {fileID: 125142092}
   - 212: {fileID: 125142094}
   - 61: {fileID: 125142093}
-  m_Layer: 0
+  - 114: {fileID: 125142095}
+  m_Layer: 9
   m_Name: flame (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +352,7 @@ Transform:
   m_LocalScale: {x: 2.1598673, y: 2.1598673, z: 2.1598673}
   m_Children: []
   m_Father: {fileID: 1777138929}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!61 &125142093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -384,6 +397,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &125142095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 125142091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189424561
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,11 +651,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 225331645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.27, y: -0.13, z: 0}
+  m_LocalPosition: {x: -5.4369216, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 0
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 55
 --- !u!61 &225331647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1238,11 +1262,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 542690823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.88, y: -0.13, z: 0}
+  m_LocalPosition: {x: -5.0469213, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 5
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 56
 --- !u!61 &542690825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1562,7 +1586,8 @@ GameObject:
   - 4: {fileID: 638768873}
   - 212: {fileID: 638768875}
   - 61: {fileID: 638768874}
-  m_Layer: 0
+  - 114: {fileID: 638768876}
+  m_Layer: 9
   m_Name: flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,11 +1601,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638768872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.27, y: 0.25, z: 0}
+  m_LocalPosition: {x: -13.27, y: 0.24999988, z: 0}
   m_LocalScale: {x: 2.1598673, y: 2.1598673, z: 2.1598673}
   m_Children: []
   m_Father: {fileID: 1777138929}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!61 &638768874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1625,6 +1650,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &638768876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638768872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &657473496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,33 +1734,10 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &715618174
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 173812, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
-  m_PrefabInternal: {fileID: 2063125249}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 715618175}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &715618175
+--- !u!4 &715618175 stripped
 Transform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 451358, guid: 8c7e7a42e5db2924981562a1a4544164, type: 2}
   m_PrefabInternal: {fileID: 2063125249}
-  m_GameObject: {fileID: 715618174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.049, y: 0.275, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 13599978}
-  m_RootOrder: 1
 --- !u!1 &725156412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +1964,13 @@ Transform:
   - {fileID: 632126030}
   - {fileID: 199902176}
   - {fileID: 877520328}
+  - {fileID: 225331646}
+  - {fileID: 542690824}
+  - {fileID: 1410474958}
+  - {fileID: 1609281827}
+  - {fileID: 1366219908}
+  - {fileID: 1722962322}
+  - {fileID: 1189716858}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &754307379
@@ -2751,7 +2771,8 @@ GameObject:
   - 4: {fileID: 1088159747}
   - 212: {fileID: 1088159749}
   - 61: {fileID: 1088159748}
-  m_Layer: 0
+  - 114: {fileID: 1088159750}
+  m_Layer: 9
   m_Name: flame (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2769,7 +2790,7 @@ Transform:
   m_LocalScale: {x: 2.1598673, y: 2.1598673, z: 2.1598673}
   m_Children: []
   m_Father: {fileID: 1777138929}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!61 &1088159748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2814,6 +2835,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1088159750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088159746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1136560830
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,11 +2928,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1189716857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.103, y: -0.13, z: 0}
+  m_LocalPosition: {x: -4.269921, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 10
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 61
 --- !u!61 &1189716859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3284,7 +3316,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1235731826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.284, y: -3.335, z: 0}
+  m_LocalPosition: {x: -4.623, y: -0.617, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1542150619}
@@ -3756,11 +3788,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1366219907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.04, y: -0.13, z: 0}
+  m_LocalPosition: {x: -6.206921, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 8
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 59
 --- !u!61 &1366219909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3829,11 +3861,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1410474957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.49, y: -0.13, z: 0}
+  m_LocalPosition: {x: -4.656921, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 6
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 57
 --- !u!61 &1410474959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4540,11 +4572,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609281826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.66, y: -0.13, z: 0}
+  m_LocalPosition: {x: -5.826921, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 7
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 58
 --- !u!61 &1609281828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4948,11 +4980,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722962321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.43, y: -0.13, z: 0}
+  m_LocalPosition: {x: -6.5969214, y: 2.3335288, z: 0}
   m_LocalScale: {x: 0.30253896, y: 0.30253896, z: 0.30253896}
   m_Children: []
-  m_Father: {fileID: 1777138929}
-  m_RootOrder: 9
+  m_Father: {fileID: 738375247}
+  m_RootOrder: 60
 --- !u!61 &1722962323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5006,7 +5038,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1777138929}
   m_Layer: 0
-  m_Name: levelOneRight
+  m_Name: FireDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5022,17 +5054,10 @@ Transform:
   m_LocalPosition: {x: 7.833079, y: -1.5155398, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 225331646}
   - {fileID: 638768873}
   - {fileID: 1088159747}
   - {fileID: 85284647}
   - {fileID: 125142092}
-  - {fileID: 542690824}
-  - {fileID: 1410474958}
-  - {fileID: 1609281827}
-  - {fileID: 1366219908}
-  - {fileID: 1722962322}
-  - {fileID: 1189716858}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &1805703400

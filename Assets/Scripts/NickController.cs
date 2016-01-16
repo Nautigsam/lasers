@@ -42,6 +42,12 @@ public class NickController : MonoBehaviour {
 			//This gets a collider
 			whatIHit = Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("Enemy"));
 			isInteracting = true;		
+		}
+		else if (Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("ElementDoors"))) {
+
+			//This gets a collider
+			whatIHit = Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("ElementDoors"));
+			isInteracting = true;		
 		} else {
 			isInteracting = false;
 		}

@@ -45,6 +45,14 @@ public class Inventory : MonoBehaviour {
 		equipmentBarPanel.GetComponent<EquipmentBar> ().ChangeHand (false, type, laserColors);
 	}
 
+	public LaserType GetLeftEquippedLaser () {
+		return equipmentBarPanel.GetComponent<EquipmentBar> ().LeftHand;
+	}
+
+	public LaserType GetRightEquippedLaser () {
+		return equipmentBarPanel.GetComponent<EquipmentBar> ().RightHand;
+	}
+
 	// Use this for initialization
 	void Start () {
 		contentPanelTransform = inventoryModalPanel.transform.Find ("InventoryModalPanel/InventoryModalContentPanel");

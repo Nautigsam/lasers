@@ -3,6 +3,8 @@ using System.Collections;
 
 public class NickController : MonoBehaviour {
 
+	public GameObject inventory;
+
 	//Booleans to describe the Player
 	public bool isInteracting = false;
 	public bool isGrounded = false;
@@ -13,27 +15,15 @@ public class NickController : MonoBehaviour {
 	//Transforms defined around the Player
 	public Transform lineStart, lineEnd, jumpCheck;
 
-
 	//Different initializations of variables
 	public float jumpForce = 100f;
 	float jumpTime, jumpDelay = .5f;
 	float firingTime, firingDelay = .2f;
 	private float speed = 4f;
 
-	/*TODO : change to private when Aurelien finishes his part
-	* Those are the two equiped lasers corresponding to the mouse clicks
-	* 0 is for no laser equiped
-	* 1 is for water laser equiped
-	* 2 is for force field laser equiped
-	*/
-	public int rightEquipedLaser = 0;
-	public int leftEquipedLaser = 0;
-
 	Animator anim;
 
 	RaycastHit2D whatIHit;
-
-
 
 	// Use this for initialization
 	void Start () {
@@ -165,11 +155,22 @@ public class NickController : MonoBehaviour {
 	}
 
 	int getRightEquipedLaser(){
-		return rightEquipedLaser;
+		return LaserTypeEnumToInt (inventory.GetComponent<Inventory> ().GetRightEquippedLaser ());
 	}
 
 	int getLeftEquipedLaser(){
-		return leftEquipedLaser;
+		return LaserTypeEnumToInt (inventory.GetComponent<Inventory> ().GetLeftEquippedLaser ());
+	}
+
+	private int LaserTypeEnumToInt (LaserType laserType) {
+		switch (laserType) {
+		case LaserType.None:
+			return 0;
+		case LaserType.Water:
+			return 1;
+		case LaserType.Force:
+			return 2;
+		}
 	}
 
 }

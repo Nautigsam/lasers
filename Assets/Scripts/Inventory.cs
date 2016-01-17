@@ -18,15 +18,16 @@ public class Inventory : MonoBehaviour {
 		{ LaserType.Force, new Color (0.4f, 0.3f, 0.3f, 0.6f) }
 	};
 
-	public GameObject inventoryPanel;
-	public GameObject equipmentBar;
+	public GameObject inventoryModalPanel;
+	public GameObject equipmentBarPanel;
+	public GameObject inventoryItemPrefab;
 
 	private Transform contentPanelTransform;
 	private Button closeButton;
 	private UnityAction closeAction;
 
 	private void CloseActionMethod () {
-		inventoryPanel.gameObject.SetActive (false);
+		inventoryModalPanel.gameObject.SetActive (false);
 		closeButton.onClick.RemoveListener (closeAction);
 		foreach (InventoryItem contentItem in contentPanelTransform.GetComponentsInChildren<InventoryItem> ()) {
 			contentItem.onLeftClick -= inventoryItemLeftClickAction;
@@ -36,23 +37,32 @@ public class Inventory : MonoBehaviour {
 
 	private InventoryItemClickAction inventoryItemLeftClickAction;
 	private void InventoryItemLeftClickMethod (LaserType type) {
-		equipmentBar.GetComponent<EquipmentBar> ().ChangeHand (true, type, laserColors);
+		equipmentBarPanel.GetComponent<EquipmentBar> ().ChangeHand (true, type, laserColors);
 	}
 
 	private InventoryItemClickAction inventoryItemRightClickAction;
 	private void InventoryItemRightClickMethod (LaserType type) {
-		equipmentBar.GetComponent<EquipmentBar> ().ChangeHand (false, type, laserColors);
+		equipmentBarPanel.GetComponent<EquipmentBar> ().ChangeHand (false, type, laserColors);
 	}
 
 	// Use this for initialization
 	void Start () {
-		contentPanelTransform = inventoryPanel.transform.Find ("InventoryPanel/ContentPanel");
+		contentPanelTransform = inventoryModalPanel.transform.Find ("InventoryModalPanel/InventoryModalContentPanel");
+
+		foreach (KeyValuePair<LaserType, Color> laser in laserColors) {
+			if (laser.Key != LaserType.None) {
+				GameObject item = Instantiate (inventoryItemPrefab);
+				item.GetComponent<InventoryItem> ().type = laser.Key;
+				item.GetComponent<Image> ().color = laser.Value;
+				item.transform.SetParent (contentPanelTransform, false);
+			}
+		}
 
 		foreach (InventoryItem item in contentPanelTransform.GetComponentsInChildren<InventoryItem> ()) {
 			item.GetComponent<Image> ().color = laserColors [item.type];
 		}
 
-		closeButton = inventoryPanel.transform.Find ("InventoryPanel/ClosePanel/CloseButton").GetComponent<Button> ();
+		closeButton = inventoryModalPanel.transform.Find ("InventoryModalPanel/InventoryModalCloseButtonPanel/InventoryModalCloseButton").GetComponent<Button> ();
 		closeAction = new UnityAction (CloseActionMethod);
 		inventoryItemLeftClickAction = InventoryItemLeftClickMethod;
 		inventoryItemRightClickAction = InventoryItemRightClickMethod;
@@ -61,17 +71,17 @@ public class Inventory : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.E)) {
-			if (!inventoryPanel.gameObject.activeSelf) {
+			if (!inventoryModalPanel.gameObject.activeSelf) {
 				closeButton.onClick.AddListener (closeAction);
 				foreach (InventoryItem contentItem in contentPanelTransform.GetComponentsInChildren<InventoryItem> ()) {
 					contentItem.onLeftClick += inventoryItemLeftClickAction;
 					contentItem.onRightClick += inventoryItemRightClickAction;
 				}
-				inventoryPanel.gameObject.SetActive (true);
+				inventoryModalPanel.gameObject.SetActive (true);
 			}
 		}
 		if (Input.GetKey (KeyCode.Escape)) {
-			if (inventoryPanel.gameObject.activeSelf) {
+			if (inventoryModalPanel.gameObject.activeSelf) {
 				closeAction.Invoke ();
 			}
 		}

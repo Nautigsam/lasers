@@ -26,6 +26,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432142}
+  - 114: {fileID: 11402278}
   m_Layer: 0
   m_Name: FireDoorFacingLeftPrefab
   m_TagString: Untagged
@@ -207,6 +208,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.18}
+--- !u!114 &11402278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff43c0d3aacd404d8905911895917b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 1
 --- !u!114 &11410692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!114 &11432694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -229,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!114 &11481658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!114 &11497442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!212 &21262510
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -381,6 +398,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: doorType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

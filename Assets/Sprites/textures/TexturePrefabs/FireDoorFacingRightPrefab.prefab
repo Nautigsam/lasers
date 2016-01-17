@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473246}
+  - 114: {fileID: 11497684}
   m_Layer: 0
   m_Name: FireDoorFacingRightPrefab
   m_TagString: Untagged
@@ -218,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!114 &11437502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -229,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!114 &11477774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +243,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
+--- !u!114 &11497684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff43c0d3aacd404d8905911895917b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 1
 --- !u!114 &11497766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b99ba263a20f7543ab673cf880cdd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorType: 0
 --- !u!212 &21200890
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -381,6 +398,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: doorType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

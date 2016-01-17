@@ -65,23 +65,26 @@ public class NickController : MonoBehaviour {
 			//This gets a collider
 			whatIHit = Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("ElementDoors"));
 			isInteracting = true;		
-		} else {
+		} else if (Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("ChangeScene"))) {
+
+			//This gets a collider
+			whatIHit = Physics2D.Linecast (lineStart.position, lineEnd.position, 1 << LayerMask.NameToLayer ("ChangeScene"));
+			isInteracting = true;		
+		}else {
 			isInteracting = false;
 		}
 
 		//Pressing the left button
-		if (Input.GetMouseButtonDown(0) && isInteracting) {
+		if (Input.GetMouseButtonDown (0) && isInteracting) {
+
 			//It is a door that we destroy, and it has to be of the complementary type in order to be destroyed
-			if (whatIHit.collider.gameObject.layer == 11 && leftEquipedLaser == whatIHit.collider.gameObject.GetComponent<PortionOfDoorController>().doorType) {
-				if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 1) 
-				{
+			if (whatIHit.collider.gameObject.layer == 11 && getLeftEquipedLaser() == whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType) {
+				if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 1) {
 					Debug.Log ("Je passe ici");
 					isFiringWater = true;
 					anim.SetBool ("firingWater", true);
 					firingTime = firingDelay;
-				}
-				else if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 2) 
-				{
+				} else if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 2) {
 					isFiringForce = true;
 					anim.SetBool ("firingForce", true);
 					firingTime = firingDelay;
@@ -89,27 +92,28 @@ public class NickController : MonoBehaviour {
 
 				//Destroy (whatIHit.collider.gameObject);
 			}
-		}
-		else if (Input.GetMouseButtonDown(1) && isInteracting) {
+		} else if (Input.GetMouseButtonDown (1) && isInteracting) {
+			
 			//It is a door that we destroy, and it has to be of the complementary type in order to be destroyed
-			if (whatIHit.collider.gameObject.layer == 11 && rightEquipedLaser == whatIHit.collider.gameObject.GetComponent<PortionOfDoorController>().doorType) {
+			if (whatIHit.collider.gameObject.layer == 11 && getRightEquipedLaser() == whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType) {
 
-				if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 1) 
-				{
+				if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 1) {
 					isFiringWater = true;
 					anim.SetBool ("firingWater", true);
 					firingTime = firingDelay;
-				}
-				else if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 2) 
-				{
+				} else if (whatIHit.collider.gameObject.GetComponent<PortionOfDoorController> ().doorType == 2) {
 					isFiringForce = true;
 					anim.SetBool ("firingForce", true);
 					firingTime = firingDelay;
 				}
 				//Destroy (whatIHit.collider.gameObject);
 			}
+		} else if (Input.GetKey (KeyCode.F) && isInteracting) {
+			if (whatIHit.collider.gameObject.layer == 12) {
+				Debug.Log ("But I'm trying");
+				Application.LoadLevel ("lavaScene");		
+			}
 		}
-			
 
 		if (isInteracting) { 
 
@@ -159,4 +163,13 @@ public class NickController : MonoBehaviour {
 
 
 	}
+
+	int getRightEquipedLaser(){
+		return rightEquipedLaser;
+	}
+
+	int getLeftEquipedLaser(){
+		return leftEquipedLaser;
+	}
+
 }
